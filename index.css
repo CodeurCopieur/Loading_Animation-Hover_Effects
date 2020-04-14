@@ -1,0 +1,334 @@
+/* Color Theme Swatches in Hex */
+/*
+  top: 0;
+          left: 0;
+          width: 100%;
+          height: 40px;
+          background: linear-gradient(90deg, transparent, $Mode-3-hex);
+
+*/
+body {
+  font-family: 'circular std', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  body .loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    body .loader .loader-spinner {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+      -webkit-transition: all 480ms;
+      -o-transition: all 480ms;
+      transition: all 480ms; }
+      body .loader .loader-spinner:hover {
+        background-color: #17BF82;
+        -webkit-box-shadow: 0 0 5px #17BF82, 0 0 25px #17BF82, 0 0 50px #17BF82, 0 0 250px #17BF82;
+        box-shadow: 0 0 5px #17BF82, 0 0 25px #17BF82, 0 0 50px #17BF82, 0 0 250px #17BF82; }
+
+@-webkit-keyframes animate {
+  0% {
+    left: -100px; } }
+
+@keyframes animate {
+  0% {
+    left: -100px; } }
+      body .loader .loader-spinner span {
+        position: absolute;
+        display: block;
+        border: 1px solid #0D8C75; }
+        body .loader .loader-spinner span:nth-child(1) {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 40px;
+          background: -webkit-gradient(linear, left top, right top, from(transparent), to(#17BF82));
+          background: -webkit-linear-gradient(left, transparent, #17BF82);
+          background: -o-linear-gradient(left, transparent, #17BF82);
+          background: linear-gradient(90deg, transparent, #17BF82);
+          -webkit-animation: animate1 1s linear infinite;
+          animation: animate1 1s linear infinite;
+          -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+
+@-webkit-keyframes animate1 {
+  0% {
+    left: -100%; }
+  100% {
+    left: 100%; } }
+
+@keyframes animate1 {
+  0% {
+    left: -100%; }
+  100% {
+    left: 100%; } }
+        body .loader .loader-spinner span:nth-child(2) {
+          top: -100%;
+          right: 0;
+          width: 40px;
+          height: 100%;
+          background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#17BF82));
+          background: -webkit-linear-gradient(top, transparent, #17BF82);
+          background: -o-linear-gradient(top, transparent, #17BF82);
+          background: linear-gradient(180deg, transparent, #17BF82);
+          -webkit-animation: animate2 1s linear infinite;
+          animation: animate2 1s linear infinite;
+          -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
+
+@-webkit-keyframes animate2 {
+  0% {
+    top: -100%; }
+  100% {
+    top: 100%; } }
+
+@keyframes animate2 {
+  0% {
+    top: -100%; }
+  100% {
+    top: 100%; } }
+        body .loader .loader-spinner span:nth-child(3) {
+          bottom: 0;
+          left: -100%;
+          width: 100%;
+          height: 40px;
+          background: -webkit-gradient(linear, right top, left top, from(transparent), to(#17BF82));
+          background: -webkit-linear-gradient(right, transparent, #17BF82);
+          background: -o-linear-gradient(right, transparent, #17BF82);
+          background: linear-gradient(270deg, transparent, #17BF82);
+          -webkit-animation: animate3 1s linear infinite;
+          animation: animate3 1s linear infinite;
+          -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+
+@-webkit-keyframes animate3 {
+  0% {
+    left: 100%; }
+  100% {
+    left: -100%; } }
+
+@keyframes animate3 {
+  0% {
+    left: 100%; }
+  100% {
+    left: -100%; } }
+        body .loader .loader-spinner span:nth-child(4) {
+          top: 100%;
+          left: 0;
+          width: 40px;
+          height: 100%;
+          background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#17BF82));
+          background: -webkit-linear-gradient(bottom, transparent, #17BF82);
+          background: -o-linear-gradient(bottom, transparent, #17BF82);
+          background: linear-gradient(0deg, transparent, #17BF82);
+          -webkit-animation: animate4 1s linear infinite;
+          animation: animate4 1s linear infinite;
+          -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
+
+@-webkit-keyframes animate4 {
+  0% {
+    top: 100%; }
+  100% {
+    top: -100%; } }
+
+@keyframes animate4 {
+  0% {
+    top: 100%; }
+  100% {
+    top: -100%; } }
+  body h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #000; }
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+main {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+img {
+  border-style: none; }
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button; }
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: .35em .75em .625em; }
+
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 400; }
+
+ul {
+  list-style: none; }
+
+button, input, select, textarea {
+  margin: 0; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+img, video {
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+td:not([align]), th:not([align]) {
+  text-align: left; }

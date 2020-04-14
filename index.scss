@@ -1,0 +1,145 @@
+/* Color Theme Swatches in Hex */
+$Mode-1-hex: #075951;
+$Mode-2-hex: #0D8C75;
+$Mode-3-hex: #17BF82;
+$Mode-4-hex: #000;
+
+@mixin styleAnimate($top, $bottom, $right, $left, $w, $h, $bgd){
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+  width: $w;
+  height: $h;
+  background: $bgd;
+}
+/*
+  top: 0;
+          left: 0;
+          width: 100%;
+          height: 40px;
+          background: linear-gradient(90deg, transparent, $Mode-3-hex);
+
+*/
+body {
+  font-family:'circular std', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loader-spinner {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+      transition: all 480ms;
+
+      &:hover {
+        background-color: $Mode-3-hex;
+        box-shadow: 0 0 5px $Mode-3-hex,
+                    0 0 25px $Mode-3-hex,
+                    0 0 50px $Mode-3-hex,
+                    0 0 250px $Mode-3-hex;
+      }
+
+      @keyframes animate {
+        0% {
+          left: -100px;
+        }
+      }
+
+      span {
+        position: absolute;
+        display: block;
+        border: 1px solid $Mode-2-hex;
+
+        &:nth-child(1) {
+          @include styleAnimate(0, null, null, 0, 100%, 40px, linear-gradient(90deg, transparent, $Mode-3-hex));
+          animation: animate1 1s linear infinite;
+          animation-delay: 0s;
+
+          @keyframes animate1 {
+            0% {
+              left: -100%;
+            }
+            100%{
+              left: 100%;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          @include styleAnimate(-100%, null, 0, null, 40px, 100%, linear-gradient(180deg, transparent, $Mode-3-hex));
+          animation: animate2 1s linear infinite;
+          animation-delay: 0.5s;
+
+          @keyframes animate2 {
+            0% {
+              top: -100%;
+            }
+            100%{
+              top: 100%;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          @include styleAnimate(null, 0, null, -100%, 100%, 40px, linear-gradient(270deg, transparent, $Mode-3-hex));
+          animation: animate3 1s linear infinite;
+          animation-delay: 0s;
+
+          @keyframes animate3 {
+            0% {
+              left: 100%;
+            }
+            100%{
+              left: -100%;
+            }
+          }
+        }
+
+        &:nth-child(4) {
+          //@include styleAnimate($top, $bottom, $right, $left, $w, $h, $bgd);
+          @include styleAnimate(100%, null, null, 0, 40px, 100%, linear-gradient(0deg, transparent, $Mode-3-hex));
+          animation: animate4 1s linear infinite;
+          animation-delay: 0.5s;
+
+          @keyframes animate4 {
+            0% {
+              top: 100%;
+            }
+            100%{
+              top: -100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: $Mode-4-hex;
+  }
+}
+
+
+
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}ul{list-style:none}button,input,select,textarea{margin:0}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
