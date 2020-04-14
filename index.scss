@@ -64,10 +64,10 @@ body {
       span {
         position: absolute;
         display: block;
-        border: 1px solid $Mode-2-hex;
+
 
         &:nth-child(1) {
-          @include styleAnimate(0, null, null, 0, 100%, 40px, linear-gradient(90deg, transparent, $Mode-3-hex));
+          @include styleAnimate(0, null, null, 0, 100%, 40px, linear-gradient(90deg, #FFF, $Mode-3-hex));
           animation: animate1 1s linear infinite;
           animation-delay: 0s;
 
@@ -82,7 +82,7 @@ body {
         }
 
         &:nth-child(2) {
-          @include styleAnimate(-100%, null, 0, null, 40px, 100%, linear-gradient(180deg, transparent, $Mode-3-hex));
+          @include styleAnimate(-100%, null, 0, null, 40px, 100%, linear-gradient(180deg, #FFF, $Mode-3-hex));
           animation: animate2 1s linear infinite;
           animation-delay: 0.5s;
 
@@ -97,7 +97,7 @@ body {
         }
 
         &:nth-child(3) {
-          @include styleAnimate(null, 0, null, -100%, 100%, 40px, linear-gradient(270deg, transparent, $Mode-3-hex));
+          @include styleAnimate(null, 0, null, -100%, 100%, 40px, linear-gradient(270deg, #FFF, $Mode-3-hex));
           animation: animate3 1s linear infinite;
           animation-delay: 0s;
 
@@ -113,7 +113,7 @@ body {
 
         &:nth-child(4) {
           //@include styleAnimate($top, $bottom, $right, $left, $w, $h, $bgd);
-          @include styleAnimate(100%, null, null, 0, 40px, 100%, linear-gradient(0deg, transparent, $Mode-3-hex));
+          @include styleAnimate(100%, null, null, 0, 40px, 100%, linear-gradient(0deg, #FFF, $Mode-3-hex));
           animation: animate4 1s linear infinite;
           animation-delay: 0.5s;
 

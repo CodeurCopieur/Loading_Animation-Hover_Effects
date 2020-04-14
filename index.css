@@ -58,17 +58,16 @@ body {
     left: -100px; } }
       body .loader .loader-spinner span {
         position: absolute;
-        display: block;
-        border: 1px solid #0D8C75; }
+        display: block; }
         body .loader .loader-spinner span:nth-child(1) {
           top: 0;
           left: 0;
           width: 100%;
           height: 40px;
-          background: -webkit-gradient(linear, left top, right top, from(transparent), to(#17BF82));
-          background: -webkit-linear-gradient(left, transparent, #17BF82);
-          background: -o-linear-gradient(left, transparent, #17BF82);
-          background: linear-gradient(90deg, transparent, #17BF82);
+          background: -webkit-gradient(linear, left top, right top, from(#FFF), to(#17BF82));
+          background: -webkit-linear-gradient(left, #FFF, #17BF82);
+          background: -o-linear-gradient(left, #FFF, #17BF82);
+          background: linear-gradient(90deg, #FFF, #17BF82);
           -webkit-animation: animate1 1s linear infinite;
           animation: animate1 1s linear infinite;
           -webkit-animation-delay: 0s;
@@ -90,10 +89,10 @@ body {
           right: 0;
           width: 40px;
           height: 100%;
-          background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#17BF82));
-          background: -webkit-linear-gradient(top, transparent, #17BF82);
-          background: -o-linear-gradient(top, transparent, #17BF82);
-          background: linear-gradient(180deg, transparent, #17BF82);
+          background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#17BF82));
+          background: -webkit-linear-gradient(top, #FFF, #17BF82);
+          background: -o-linear-gradient(top, #FFF, #17BF82);
+          background: linear-gradient(180deg, #FFF, #17BF82);
           -webkit-animation: animate2 1s linear infinite;
           animation: animate2 1s linear infinite;
           -webkit-animation-delay: 0.5s;
@@ -115,10 +114,10 @@ body {
           left: -100%;
           width: 100%;
           height: 40px;
-          background: -webkit-gradient(linear, right top, left top, from(transparent), to(#17BF82));
-          background: -webkit-linear-gradient(right, transparent, #17BF82);
-          background: -o-linear-gradient(right, transparent, #17BF82);
-          background: linear-gradient(270deg, transparent, #17BF82);
+          background: -webkit-gradient(linear, right top, left top, from(#FFF), to(#17BF82));
+          background: -webkit-linear-gradient(right, #FFF, #17BF82);
+          background: -o-linear-gradient(right, #FFF, #17BF82);
+          background: linear-gradient(270deg, #FFF, #17BF82);
           -webkit-animation: animate3 1s linear infinite;
           animation: animate3 1s linear infinite;
           -webkit-animation-delay: 0s;
@@ -140,10 +139,10 @@ body {
           left: 0;
           width: 40px;
           height: 100%;
-          background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#17BF82));
-          background: -webkit-linear-gradient(bottom, transparent, #17BF82);
-          background: -o-linear-gradient(bottom, transparent, #17BF82);
-          background: linear-gradient(0deg, transparent, #17BF82);
+          background: -webkit-gradient(linear, left bottom, left top, from(#FFF), to(#17BF82));
+          background: -webkit-linear-gradient(bottom, #FFF, #17BF82);
+          background: -o-linear-gradient(bottom, #FFF, #17BF82);
+          background: linear-gradient(0deg, #FFF, #17BF82);
           -webkit-animation: animate4 1s linear infinite;
           animation: animate4 1s linear infinite;
           -webkit-animation-delay: 0.5s;
